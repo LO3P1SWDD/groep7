@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+.homepage {
+  background-image: url('../img/nox-dine-in-the-dark-restaurant-interior-singapore.jpg');
+  background-repeat: no-repeat;
+  background-size: 1640px 1024px;   
+  transition: background-image 2s ease;
+}
+
+
+header, nav, footer {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 1s ease-in-out;
+}
+
+header {
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav div.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20px; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 10px;
+}
+
+nav li {
+  padding: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  border-bottom: none;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #C79023; 
+}
+
+nav a img {
+  height: 126px;
+  width: 239px;
+  border-bottom: none;
+  pointer-events: none; 
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  padding: -30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.foto-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 960px;
+}
+
+.foto-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 33px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.foto-container img:hover {
+  transform: scale(1.1);
+}
+
+header, nav, footer {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.welcome-section {
+  margin-top: 350px; 
+  width: 100%;
+  color: #fff;
+}
+
+.reservation-section {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  width: 239px;
+  margin-left: 0px;
+  height: 34;
+}
+
+.reservation-section:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.reservation-section h2 {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.reservation-section h2:hover {
+  color: #C79023;
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  z-index: 1001;
+  display: none;
+}
+
+.cookie-popup article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cookie-popup p {
+  margin-bottom: 1rem;
+}
+
+.cookie-popup button {
+  background-color: #C79023;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.cookie-popup button:hover {
+  background-color: #fff;
+  color: #C79023;
+}
+
+.cookie-popup a {
+  color: #C79023;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menubody {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menubody::before {
+  content: "";
+  background-image: url('../img/free-photo-of-carrying-a-cutting-board-with-slices-of-hot-dog-pizza.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 50px;
+}
+
+.menubody::after {
+  content: "";
+  background-color: rgb(66, 66, 66);
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 50px;
+}
+
+.menucard-container {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.menucard-button {
+  background-color: white;
+  display: flex;
+  color:rgb(153, 0, 0) ;
+  width: 180px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 400px 0px 0px 250%;
+  cursor: grabbing;
+  border: #C79023;
+}
+
+.c63 {
+  color: white;
+  margin-right: 200px;
+}
